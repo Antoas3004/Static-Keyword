@@ -1,0 +1,27 @@
+public class Static_with_variables {
+
+	// instance variables
+	int a;
+	String name;
+	double salary;
+
+	// Ststic variables
+	static char grade = 'A';
+
+	// constructor
+	Static_with_variables(int a, String name, double salary) {
+		this.a = a;
+		this.name = name;
+		this.salary = salary;
+	}
+
+	// method
+	void method() {
+		System.out.println(a + name + salary + grade);
+	}
+
+	public static void main(String[] args) {
+		Static_with_variables obj = new Static_with_variables(1, "anto", 20000);
+		obj.method();
+	}
+}
