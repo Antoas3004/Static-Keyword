@@ -1,0 +1,29 @@
+public class Static_with_method {
+	// instance variables
+	int a = 1;
+
+	// Ststic variable
+	static double b = 2.2;
+
+	// non static method (or) instance method
+	// non static mrthod can use static varibles
+	void m() {
+		System.out.println(a);
+		System.out.println(b);
+	}
+
+	// static method
+	// static method can only use static variable
+	// static method can't use instance variable
+	// static method can't have a object creation it's called their name
+	static void c() {
+		double c = b + b;
+		System.out.println(c);
+	}
+
+	public static void main(String[] args) {
+		Static_with_method obj = new Static_with_method();
+		obj.m();
+		c();
+	}
+}
